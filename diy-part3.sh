@@ -14,8 +14,8 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-git clone https://github.com/mwarning/zerotier-openwrt package/zerotier
-git clone https://github.com/linkease/ddnsto-openwrt package/ddnsto
+#git clone https://github.com/mwarning/zerotier-openwrt package/zerotier
+#git clone https://github.com/linkease/ddnsto-openwrt package/ddnsto
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 #sed -i '$a src-git zerotier https://github.com/mwarning/zerotier-openwrt.git' feeds.conf.default
 #sed -i '$a src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default

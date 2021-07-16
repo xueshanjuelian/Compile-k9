@@ -14,7 +14,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-echo 'src-git baiyunxue https://github.com/baiyunxue/openwrt-package.git;master' >>feeds.conf.default
+sed -i '$a src-git baiyunxue https://github.com/baiyunxue/openwrt-package.git;master' feeds.conf.default
 #echo 'src-git garypang13 https://github.com/garypang13/openwrt-packages.git;master' >>feeds.conf.default
 #sed -i '$a src-git luci https://github.com/immortalwrt/luci.git;openwrt-18.06' feeds.conf.default
 #sed -i '$a src-git garypang13 https://github.com/garypang13/openwrt-packages.git' feeds.conf.default

@@ -46,7 +46,7 @@ ssh Y26QeagDtsPXp2mT6me5cnMRd@nyc1.tmate.io
 
 https://tmate.io/t/Y26QeagDtsPXp2mT6me5cnMRd
 
-复制 SSH 连接命令粘贴到终端内执行，或者复制链接在浏览器中打开使用网页终端，登陆云menuconfig。
+复制 SSH 连接命令粘贴到终端内执行，或者复制链接在浏览器中打开使用网页终端，登陆云menuconfig（Ctrl+C进入页面）
 
 命令：cd openwrt && make menuconfig
 

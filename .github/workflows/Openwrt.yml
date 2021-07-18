@@ -19,7 +19,6 @@ on:
         required: true
         default: 'true'
     
-    - name: 检查配置文件
 env:
   REPO_URL: https://git.openwrt.org/openwrt/openwrt.git
   REPO_BRANCH: openwrt-19.07

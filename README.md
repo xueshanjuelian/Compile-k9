@@ -23,13 +23,17 @@ LICENSE GitHub Stars GitHub Forks
    ```
 在lede目录下打开.config文件，复制内容到Compile-Lede-Openwrt的.config替换其内容
 
+其他源代码操作方法雷同
+
 通过修改diy-part1.sh文件修改feeds.conf.default配置。
 
 通过修改diy-part2.sh文件可以自定义默认IP等。按我的需要现在的默认IP为192.168.10.1
-![2021-07-18_230822](https://user-images.githubusercontent.com/84278744/126072452-6103adc4-0e19-4816-a769-e67d15ee1c21.png)
-手动点击Run Workflows触发开始编译，默认SSH关闭false，有需要可以修改为true
 
-在触发工作流程后，默认SSH_ACTIONS: true在 Actions 页面等待执行到SSH connection to Actions步骤，会出现下面信息：
+![2021-07-18_230822](https://user-images.githubusercontent.com/84278744/126072452-6103adc4-0e19-4816-a769-e67d15ee1c21.png)
+
+手动点击Run Workflows触发开始编译，默认SSH关闭false，有需要可以修改为true开启
+
+在触发工作流程后，默认SSH: true在 Actions 页面等待执行到SSH connection to Actions步骤，会出现下面信息：
 
 To connect to this session copy-n-paste the following into a terminal or browser:
 

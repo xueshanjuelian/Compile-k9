@@ -10,7 +10,7 @@
 
 name: OpenWrt
    
-   - name: 开启或关闭SSH
+    - name: 开启或关闭SSH
 on:
   repository_dispatch:
   workflow_dispatch:

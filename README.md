@@ -55,5 +55,4 @@ https://tmate.io/t/Y26QeagDtsPXp2mT6me5cnMRd
 这样比较灵活，可以根据路由器硬件通过云menuconfig自定义配置固件，不需要再导出.config和上传
 
 进阶玩法请看P3TERX的博客中文教程
-
-使用同步.config多流程编译移步Actions-Lean-OpenWrt
+https://github.com/P3TERX/Actions-OpenWrt

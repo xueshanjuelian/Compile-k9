@@ -9,7 +9,8 @@
 #
 
 name: OpenWrt
-
+   
+   - name: 开启或关闭SSH
 on:
   repository_dispatch:
   workflow_dispatch:
@@ -18,7 +19,8 @@ on:
         description: 'SSH connection to Actions'
         required: true
         default: 'true'
-
+    
+    - name: 检查配置文件
 env:
   REPO_URL: https://git.openwrt.org/openwrt/openwrt.git
   REPO_BRANCH: openwrt-19.07
@@ -38,7 +40,7 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
-    - name: 检查
+    - name: 测试》》》》》》》》》
       uses: actions/checkout@main
 
     - name: 初始化环境
@@ -81,7 +83,7 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
     
-    - name: SSH连接至Actions平台
+    - name: SSH连接至Actions云平台
       uses: P3TERX/ssh2actions@v1.0.0
       if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
       env:
@@ -110,7 +112,7 @@ jobs:
       if: (!cancelled())
       run: df -hT
 
-    - name: 上传文件夹
+    - name: 上传到文件夹
       uses: actions/upload-artifact@main
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
@@ -132,7 +134,7 @@ jobs:
         name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
 
-    - name: 上传固件到-奶牛快传
+    - name: 上传固件到=》奶牛快传
       id: cowtransfer
       if: steps.organize.outputs.status == 'success' && env.UPLOAD_COWTRANSFER == 'true' && !cancelled()
       run: |
@@ -140,7 +142,7 @@ jobs:
         ./transfer cow --block 2621440 -s -p 64 --no-progress ${FIRMWARE} 2>&1 | tee cowtransfer.log
         echo "::warning file=cowtransfer.com::$(cat cowtransfer.log | grep https)"
         echo "::set-output name=url::$(cat cowtransfer.log | grep https | cut -f3 -d" ")"
-    - name: 上传固件到wetransfer
+    - name: 上传固件到=》wetransfer
       id: wetransfer
       if: steps.organize.outputs.status == 'success' && env.UPLOAD_WETRANSFER == 'true' && !cancelled()
       run: |

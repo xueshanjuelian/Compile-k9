@@ -93,7 +93,7 @@ jobs:
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
-    - name: 开始编译固件：请稍等..........(大概1小时左右)
+    - name: 开始编译固件：请稍等..........(大概2小时左右)
       id: compile
       run: |
         cd openwrt

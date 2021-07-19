@@ -5,7 +5,7 @@
 # This is free software, licensed under the MIT License.         
 # See /LICENSE for more information.
 #
-# https://github.com/baiyunxue/Compile
+# https://github.com/baiyunxue/Compile-Lede-Openwrt
 # File name: diy-part2.sh
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #============================================================

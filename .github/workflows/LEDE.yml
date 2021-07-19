@@ -38,10 +38,10 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-    - name: 测试 》》》》》》》》》》
+    - name: 检查。。。。。。初始环境
       uses: actions/checkout@main
 
-    - name: 初始化环境
+    - name: 正在载入Ubuntu-20.04
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
@@ -170,7 +170,7 @@ jobs:
         retain_days: 1
         keep_minimum_runs: 3
 
-    - name: 移除旧的释放空间
+    - name: 移除旧的工作文件释放空间
       uses: dev-drprasad/delete-older-releases@v0.1.0
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:

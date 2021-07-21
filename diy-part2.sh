@@ -16,3 +16,14 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 sed -i 's/disabled=1/disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 # Modify default SSID
 #sed -i 's/ssid=OpenWrt/ssid=lantian/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+
+#Add ddnsto
+svn co https://github.com/281677160/openwrt-package/branches/openwrt-21.02/package/luci-app-ddnsto/luci/luci-app-ddnsto feeds/luci/applications/luci-app-ddnsto
+svn co https://github.com/281677160/openwrt-package/branches/openwrt-21.02/package/luci-app-ddnsto/network/services/ddnsto package/network/services/ddnsto
+
+#Add luci-app-zerotier
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-zerotier feeds/luci/applications/luci-app-zerotier
+
+#Add luci-app-smartdn
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-smartdns feeds/luci/applications/luci-app-smartdn
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-adbyby-plus feeds/luci/applications/luci-app-adbyby-plus

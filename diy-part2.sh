@@ -19,11 +19,12 @@ sed -i 's/disabled=1/disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac802
 
 #Add ddnsto
 svn co https://github.com/281677160/openwrt-package/branches/openwrt-21.02/package/luci-app-ddnsto/luci/luci-app-ddnsto package/feeds/luci/luci-app-ddnsto
+svn co https://github.com/281677160/openwrt-package/branches/openwrt-21.02/package/luci-app-ddnsto/luci/luci-app-ddnsto feeds/luci/applications/luci/luci-app-ddnsto
 svn co https://github.com/281677160/openwrt-package/branches/openwrt-21.02/package/luci-app-ddnsto/network/services/ddnsto package/network/services/ddnsto
 
 #Add luci-app-zerotier
-svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-zerotier package/feeds/luci/luci-app-zerotier
-
+#svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-zerotier package/feeds/luci/luci-app-zerotier
+#svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-zerotier feeds/luci/applications/luci/luci-app-zerotier
 #Add luci-app-smartdn
-svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-smartdns package/feeds/luci/luci-app-smartdn
-svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-adbyby-plus package/feeds/luci/luci-app-adbyby-plus
+#svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-smartdns package/feeds/luci/luci-app-smartdn
+#svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-adbyby-plus package/feeds/luci/luci-app-adbyby-plus

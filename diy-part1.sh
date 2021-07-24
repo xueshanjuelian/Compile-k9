@@ -14,9 +14,9 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-echo 'src-git hackpackage https://github.com/openwrt/packages.git;openwrt-19.07' >>feeds.conf.default
-echo 'src-git hackluci https://github.com/openwrt/luci.git;openwrt-19.07' >>feeds.conf.default
-sed -i '$a src-git immortalwrt https://github.com/immortalwrt/luci.git;openwrt-18.06' feeds.conf.default
+#echo 'src-git hackpackage https://github.com/openwrt/packages.git;openwrt-19.07' >>feeds.conf.default
+#echo 'src-git hackluci https://github.com/openwrt/luci.git;openwrt-19.07' >>feeds.conf.default
+#sed -i '$a src-git immortalwrt https://github.com/immortalwrt/luci.git;openwrt-18.06' feeds.conf.default
 #echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 #echo 'src-git kenzok8 https://github.com/kenzok8/jell.git' >>feeds.conf.default
 #echo 'src-git garypang13 https://github.com/garypang13/openwrt-packages.git;master' >>feeds.conf.default

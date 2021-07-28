@@ -1,5 +1,5 @@
 
-name: LEDE
+name: blank
 
 on:
   repository_dispatch:

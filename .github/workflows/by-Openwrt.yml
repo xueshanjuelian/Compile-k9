@@ -34,7 +34,7 @@ jobs:
       - name: 克隆源代码
         working-directory: /workdir
         run: |
-          git clone -b openwrt-19.07  https://github.com/openwrt/openwrt
+          git clone -b openwrt-19.07  https://git.openwrt.org/openwrt/openwrt.git
           cd openwrt
           sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages.git
           ./scripts/feeds update -a

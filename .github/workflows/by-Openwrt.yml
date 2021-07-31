@@ -33,8 +33,10 @@ jobs:
       
       - name: 克隆源代码
         run: |
-          git clone -b openwrt-19.07 https://github.com/openwrt/openwrt
+          mkdir openwrt
+          sudo chmod 777 openwrt
           cd openwrt
+          git clone -b openwrt-19.07 https://github.com/openwrt/openwrt
           sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages.git
           ./scripts/feeds update -a
           ./scripts/feeds install -a

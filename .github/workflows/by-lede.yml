@@ -55,7 +55,6 @@ jobs:
       - name: 开始编译固件：请稍等..........(大概2小时左右)
         run: |
           cd openwrt
-          echo -e "$(nproc) thread compile"
           make -j1 V=s
           
       - name : 上传固件

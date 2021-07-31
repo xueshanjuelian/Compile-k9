@@ -33,10 +33,8 @@ jobs:
       
       - name: 克隆源代码
         run: |
-          mkdir openwrt
-          sudo chmod 777 openwrt
-          cd openwrt
-          git clone -b openwrt-19.07 https://github.com/openwrt/openwrt
+          git clone -b openwrt-19.07 https://github.com/openwrt/openwrt by-openwrt
+          cd by-openwrt
           sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages.git
           ./scripts/feeds update -a
           ./scripts/feeds install -a
@@ -50,16 +48,16 @@ jobs:
    
       - name: 下载编译所需要的dl包
         run: |
-          cd openwrt
+          cd by-openwrt
           make -j8 download V=s   
           
       - name: 开始编译固件：请稍等..........(大概2小时左右)
         run: |
-          cd openwrt
+          cd by-openwrt
           make -j1 V=s
           
       - name : 上传固件
         uses: actions/upload-artifact@main
         with:
-          name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+          name: by-OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
           path: openwrt/bin

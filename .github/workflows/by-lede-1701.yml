@@ -39,7 +39,6 @@ jobs:
         run: |
           git clone -b lede-17.01 https://git.openwrt.org/openwrt/openwrt.git
           cd openwrt
-          sed -i '$a src-git immortalwrt https://github.com/immortalwrt/luci.git;openwrt-18.06-k5.4' feeds.conf.default
           ./scripts/feeds update -a
           ./scripts/feeds install -a
       

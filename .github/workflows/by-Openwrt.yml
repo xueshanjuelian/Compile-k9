@@ -38,8 +38,8 @@ jobs:
       
       - name: 克隆源代码
         run: |
-          git clone -b openwrt-19.07 
-          cd openwrthttps://git.openwrt.org/openwrt/openwrt.git
+          git clone -b openwrt-19.07 https://git.openwrt.org/openwrt/openwrt.git
+          cd openwrt
           ./scripts/feeds update -a
           ./scripts/feeds install -a
           git clone https://github.com/baiyunxue/ZDY.git package/files

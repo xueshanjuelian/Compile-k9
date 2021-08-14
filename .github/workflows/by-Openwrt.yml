@@ -38,10 +38,11 @@ jobs:
       
       - name: 克隆源代码
         run: |
-          git clone https://github.com/touchsola/MyOpenWrt-Full.git openwrt
-          cd openwrt
+          git clone -b openwrt-19.07 
+          cd openwrthttps://git.openwrt.org/openwrt/openwrt.git
           ./scripts/feeds update -a
           ./scripts/feeds install -a
+          git clone https://github.com/baiyunxue/ZDY.git package/files
       
       - name: SSH连接至Actions云服务器
         uses: P3TERX/ssh2actions@v1.0.0

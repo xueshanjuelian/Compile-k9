@@ -38,11 +38,10 @@ jobs:
       
       - name: 克隆源代码
         run: |
-          git clone -b openwrt-19.07 https://git.openwrt.org/openwrt/openwrt.git
+          git clone https://github.com/touchsola/MyOpenWrt-Full.git
           cd openwrt
           ./scripts/feeds update -a
           ./scripts/feeds install -a
-          git clone https://github.com/baiyunxue/ZDY.git package/files
       
       - name: SSH连接至Actions云服务器
         uses: P3TERX/ssh2actions@v1.0.0
@@ -56,8 +55,12 @@ jobs:
           cd openwrt
           make -j1 V=s
           
-      - name : 上传固件
+      - name: 检查github空间使用情况
+        if: (!cancelled())
+        run: df -hT
+
+      - name: 上传（固件+ipk）的bin文件夹 到github空间
         uses: actions/upload-artifact@main
         with:
-          name: by-OpenWrt-g_bin
+          name: by-OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
           path: openwrt/bin

@@ -43,6 +43,10 @@ jobs:
           ./scripts/feeds update -a
           ./scripts/feeds install -a
           git clone https://github.com/baiyunxue/ZDY.git package/files
+          svn co https://github.com/linkease/ddnsto-openwrt/trunk/ddnsto package/network/services/ddnsto
+          svn co https://github.com/linkease/ddnsto-openwrt/trunk/luci-app-ddnsto package/files/luci-app-ddnsto
+          svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-xunlei package/files/luci-app-xunlei
+          svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-qbittorrent package/files/luci-app-qbittorrent
       
       - name: SSH连接至Actions云服务器
         uses: P3TERX/ssh2actions@v1.0.0

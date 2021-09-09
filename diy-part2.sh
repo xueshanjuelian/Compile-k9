@@ -25,6 +25,7 @@ git clone mchome https://github.com/mchome/openwrt-vlmcsd.git package/DIY/vlmcsd
 git clone monokoo https://github.com/monokoo/luci-app-transmission.git package/DIY/luci-app-transmission   #transmission下载
 git clone pymumu https://github.com/pymumu/luci-app-smartdns.git package/DIY/luci-app-smartdns  #smartdns加速app
 git clone pymumu https://github.com/pymumu/openwrt-smartdns.git package/DIY/smartdns   #smartdns加速
+git clone rufengsuixing https://github.com/rufengsuixing/luci-app-zerotier.git package/DIY/luci-app-zerotier   #zerotier穿透
 svn co https://github.com/animefansxj/luci-app-vsftpd/trunk/Source/op-dir/feeds/packages/net/vsftpd package/DIY/vsftpd   #vsftpd共享
 svn co https://github.com/animefansxj/luci-app-vsftpd/trunk/Source/luci-dir/applications/luci-vsftpd package/DIY/luci-app-vsftpd   #vsftpd共享app
 

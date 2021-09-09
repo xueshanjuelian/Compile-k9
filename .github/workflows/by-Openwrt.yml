@@ -42,23 +42,8 @@ jobs:
           cd openwrt
           ./scripts/feeds update -a
           ./scripts/feeds install -a
-          #git clone https://github.com/baiyunxue/ZDY.git package/files
-          svn co https://github.com/linkease/ddnsto-openwrt/trunk/ddnsto package/network/services/ddnsto
-          svn co https://github.com/linkease/ddnsto-openwrt/trunk/luci-app-ddnsto package/files/luci-app-ddnsto
-          svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-xunlei package/files/luci-app-xunlei
-          svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-qbittorrent package/files/luci-app-qbittorrent
-          git clone awesome-openwrt https://github.com/awesome-openwrt/luci-app-autoreboot.git package/DIY/luci-app-autoreboot
-          git clone mchome https://github.com/mchome/luci-app-vlmcsd.git package/DIY/luci-app-vlmcsd
-          git clone mchome https://github.com/mchome/openwrt-vlmcsd.git package/DIY/vlmcsd
-          git clone monokoo https://github.com/monokoo/luci-app-transmission.git package/DIY/luci-app-transmission
-          git clone pymumu https://github.com/pymumu/luci-app-smartdns.git package/DIY/luci-app-smartdns
-          git clone pymumu https://github.com/pymumu/openwrt-smartdns.git package/DIY/smartdns
-          git clone rufengsuixing https://github.com/rufengsuixing/luci-app-zerotier.git package/DIY/luci-app-zerotier
-          svn co https://github.com/animefansxj/luci-app-vsftpd/trunk/Source/op-dir/feeds/packages/net/vsftpd package/DIY/vsftpd
-          svn co https://github.com/animefansxj/luci-app-vsftpd/trunk/Source/luci-dir/applications/luci-vsftpd package/DIY/luci-app-vsftpd
-          git clone Leo-Jo-My https://github.com/Leo-Jo-My/luci-theme-opentomato.git package/DIY/luci-theme-opentomato
-          git clone Leo-Jo-My https://github.com/Leo-Jo-My/luci-theme-argon-dark-mod.git package/DIY/luci-theme-argon-dark-mod
-      
+          git clone https://github.com/baiyunxue/ZDY.git package/files
+          
       - name: SSH连接至Actions云服务器
         uses: P3TERX/ssh2actions@v1.0.0
         if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')

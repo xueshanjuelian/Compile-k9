@@ -47,7 +47,6 @@ jobs:
           svn co https://github.com/linkease/ddnsto-openwrt/trunk/luci-app-ddnsto package/files/luci-app-ddnsto
           svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-xunlei package/files/luci-app-xunlei
           svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-qbittorrent package/files/luci-app-qbittorrent
-          git clone monokoo https://github.com/monokoo/luci-app-arpbind.git package/DIY/luci-app-arpbind
           git clone awesome-openwrt https://github.com/awesome-openwrt/luci-app-autoreboot.git package/DIY/luci-app-autoreboot
           git clone mchome https://github.com/mchome/luci-app-vlmcsd.git package/DIY/luci-app-vlmcsd
           git clone mchome https://github.com/mchome/openwrt-vlmcsd.git package/DIY/vlmcsd

@@ -27,7 +27,7 @@ jobs:
       - name: 检查。。。系统运行环境
         uses: actions/checkout@v2
 
-      - name: 正在载入Ubuntu。。。。。
+      - name: 正在载入Ubuntu-latest。。。。。
         run: |
           sudo apt update
           sudo apt install build-essential ccache ecj fastjar file g++ gawk \

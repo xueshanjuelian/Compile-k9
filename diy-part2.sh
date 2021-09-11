@@ -35,3 +35,4 @@ git clone Leo-Jo-My https://github.com/Leo-Jo-My/luci-theme-argon-dark-mod.git p
 
 #自定义软件包
 git clone -b 19.07 https://github.com/kenzok8/openwrt-packages package/kenzok8
+git clone https://github.com/sirpdboy/sirpdboy-package.git package/sirpdboy

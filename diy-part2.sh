@@ -23,11 +23,11 @@ git clone https://github.com/awesome-openwrt/luci-app-autoreboot.git package/DIY
 git clone https://github.com/mchome/luci-app-vlmcsd.git package/DIY/luci-app-vlmcsd   #KSM服务app
 git clone https://github.com/mchome/openwrt-vlmcsd.git package/DIY/vlmcsd   #KSM服务
 git clone https://github.com/monokoo/luci-app-transmission.git package/DIY/luci-app-transmission   #transmission下载
-git clone https://github.com/pymumu/luci-app-smartdns.git package/DIY/luci-app-smartdns  #smartdns加速app
+git clone -b master https://github.com/pymumu/luci-app-smartdns.git package/DIY/luci-app-smartdns  #smartdns加速app
 git clone https://github.com/pymumu/openwrt-smartdns.git package/DIY/smartdns   #smartdns加速
 git clone https://github.com/rufengsuixing/luci-app-zerotier.git package/DIY/luci-app-zerotier   #zerotier穿透
-svn co https://github.com/animefansxj/luci-app-vsftpd/trunk/Source/op-dir/feeds/packages/net/vsftpd package/DIY/vsftpd   #vsftpd共享
-svn co https://github.com/animefansxj/luci-app-vsftpd/trunk/Source/luci-dir/applications/luci-vsftpd package/DIY/luci-app-vsftpd   #vsftpd共享app
+svn co https://github.com/baiyunxue/ZDY/trunk/vsftpd package/DIY/vsftpd   #vsftpd共享
+svn co https://github.com/baiyunxue/ZDY/trunk/luci-app-vsftpd package/DIY/luci-app-vsftpd   #vsftpd共享app
 
 # 自定义theme主题
 git clone https://github.com/Leo-Jo-My/luci-theme-opentomato.git package/DIY/luci-theme-opentomato

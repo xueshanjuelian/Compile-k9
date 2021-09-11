@@ -29,7 +29,9 @@ git clone rufengsuixing https://github.com/rufengsuixing/luci-app-zerotier.git p
 svn co https://github.com/animefansxj/luci-app-vsftpd/trunk/Source/op-dir/feeds/packages/net/vsftpd package/DIY/vsftpd   #vsftpd共享
 svn co https://github.com/animefansxj/luci-app-vsftpd/trunk/Source/luci-dir/applications/luci-vsftpd package/DIY/luci-app-vsftpd   #vsftpd共享app
 
-
 # 自定义theme主题
 git clone Leo-Jo-My https://github.com/Leo-Jo-My/luci-theme-opentomato.git package/DIY/luci-theme-opentomato
 git clone Leo-Jo-My https://github.com/Leo-Jo-My/luci-theme-argon-dark-mod.git package/DIY/luci-theme-argon-dark-mod
+
+#自定义软件包
+git clone -b 19.07 https://github.com/kenzok8/openwrt-packages package/kenzok8

@@ -43,7 +43,7 @@ jobs:
           ./scripts/feeds update -a
           ./scripts/feeds install -a
           git clone https://github.com/baiyunxue/ZDY.git package/files
-          git clone https://github.com/kenzok8/openwrt-packages.git package/kenzok8
+          git clone -b 19.07 https://github.com/kenzok8/openwrt-packages package/kenzok8
           
       - name: SSH连接至Actions云服务器
         uses: P3TERX/ssh2actions@v1.0.0

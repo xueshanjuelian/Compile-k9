@@ -46,6 +46,7 @@ jobs:
           svn co https://github.com/gw826943555/openwrt-vlmcsd/trunk/vlmcsd package/DIY/vlmcsd   #KSM服务
           svn co https://github.com/gw826943555/openwrt-vsftpd/trunk/vsftpd package/DIY/vsftpd   #vsftpd共享
           svn co https://github.com/gw826943555/openwrt-vsftpd/trunk/luci-app-vsftpd package/DIY/luci-app-vsftpd   #vsftpd共享app
+          svn co https://github.com/zxlhhyccc/bf-package/trunk/lienol/luci-app-timecontrol package/DIY/luci-app-timecontrol
           
       - name: SSH连接至Actions云服务器
         uses: P3TERX/ssh2actions@v1.0.0

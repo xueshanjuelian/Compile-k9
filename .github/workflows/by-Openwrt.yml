@@ -42,7 +42,16 @@ jobs:
           cd openwrt
           ./scripts/feeds update -a
           ./scripts/feeds install -a
-          git clone https://github.com/baiyunxue/ZDY.git package/filse
+          svn co https://github.com/gw826943555/openwrt-vlmcsd/trunk/luci-app-vlmcsd package/DIY/luci-app-vlmcsd   #KSM服务app
+          svn co https://github.com/gw826943555/openwrt-vlmcsd/trunk/vlmcsd package/DIY/vlmcsd   #KSM服务
+          svn co https://github.com/gw826943555/openwrt-vsftpd/trunk/vsftpd package/DIY/vsftpd   #vsftpd共享
+          svn co https://github.com/gw826943555/openwrt-vsftpd/trunk/luci-app-vsftpd package/DIY/luci-app-vsftpd   #vsftpd共享app
+          svn co https://github.com/zxlhhyccc/bf-package/trunk/lienol/luci-app-timecontrol package/DIY/luci-app-timecontrol
+          svn co https://github.com/zxlhhyccc/bf-package/trunk/lean/luci-app-arpbind package/DIY/luci-app-arpbind
+          svn co https://github.com/zxlhhyccc/bf-package/trunk/lean/luci-app-autoreboot package/DIY/luci-app-autoreboot
+          svn co https://github.com/zxlhhyccc/bf-package/trunk/lean/luci-app-ramfree package/DIY/luci-app-ramfree
+          git clone https://github.com/Leo-Jo-My/luci-theme-opentomato.git package/DIY/luci-theme-opentomato
+          git clone https://github.com/Leo-Jo-My/luci-theme-argon-dark-mod.git package/DIY/luci-theme-argon-dark-mod
           
       - name: SSH连接至Actions云服务器
         uses: P3TERX/ssh2actions@v1.0.0

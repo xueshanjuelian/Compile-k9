@@ -19,8 +19,8 @@ sed -i 's/disabled=1/disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac802
 
 # 自定义app
 git clone https://github.com/monokoo/luci-app-arpbind.git package/DIY/luci-app-arpbind   #IP绑定
-git clone https://github.com/awesome-openwrt/luci-app-autoreboot.git package/DIY/luci-app-autoreboot  #计划重启
-git clone https://github.com/yz2002/luci-app-ramfree.git package/DIY/luci-app-ramfree   #内存释放
+git clone https://github.com/awesome-openwrt/app-autoreboot.git package/DIY/luci-app-autoreboot  #计划重启
+git clone https://github.com/awesome-openwrt/app-ramfree.git package/DIY/luci-app-ramfree   #内存释放
 svn co https://github.com/k-szuster/luci-access-control/trunk/luci-app-access-control package/DIY/luci-app-accesscontrol   #上网时间控制
 svn co https://github.com/gw826943555/openwrt-vlmcsd/trunk/luci-app-vlmcsd package/DIY/luci-app-vlmcsd   #KSM服务app
 svn co https://github.com/gw826943555/openwrt-vlmcsd/trunk/vlmcsd package/DIY/vlmcsd   #KSM服务

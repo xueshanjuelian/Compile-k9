@@ -20,14 +20,12 @@ sed -i 's/disabled=1/disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac802
 # 自定义app
 git clone https://github.com/monokoo/luci-app-arpbind.git package/DIY/luci-app-arpbind   #IP绑定
 git clone https://github.com/awesome-openwrt/luci-app-autoreboot.git package/DIY/luci-app-autoreboot  #计划重启
-git clone https://github.com/mchome/luci-app-vlmcsd.git package/DIY/luci-app-vlmcsd   #KSM服务app
-git clone https://github.com/mchome/openwrt-vlmcsd.git package/DIY/vlmcsd   #KSM服务
-git clone https://github.com/monokoo/luci-app-transmission.git package/DIY/luci-app-transmission   #transmission下载
-git clone https://github.com/baiyunxue/ZDY/trunk/luci-app-smartdns package/DIY/luci-app-smartdns  #smartdns加速app
-git clone https://github.com/baiyunxue/ZDY/trunk/smartdns package/DIY/smartdns   #smartdns加速
-git clone https://github.com/rufengsuixing/luci-app-zerotier.git package/DIY/luci-app-zerotier   #zerotier穿透
-svn co https://github.com/baiyunxue/ZDY/trunk/vsftpd package/DIY/vsftpd   #vsftpd共享
-svn co https://github.com/baiyunxue/ZDY/trunk/luci-app-vsftpd package/DIY/luci-app-vsftpd   #vsftpd共享app
+git clone https://github.com/yz2002/luci-app-ramfree.git package/DIY/luci-app-ramfree   #内存释放
+svn co https://github.com/k-szuster/luci-access-control/trunk/luci-app-access-control package/DIY/luci-app-accesscontrol   #上网时间控制
+svn co https://github.com/gw826943555/openwrt-vlmcsd/trunk/luci-app-vlmcsd package/DIY/luci-app-vlmcsd   #KSM服务app
+svn co https://github.com/gw826943555/openwrt-vlmcsd/trunk/vlmcsd package/DIY/vlmcsd   #KSM服务
+svn co https://github.com/gw826943555/openwrt-vsftpd/trunk/vsftpd package/DIY/vsftpd   #vsftpd共享
+svn co https://github.com/gw826943555/openwrt-vsftpd/trunk/luci-app-vsftpd package/DIY/luci-app-vsftpd   #vsftpd共享app
 
 # 自定义theme主题
 git clone https://github.com/Leo-Jo-My/luci-theme-opentomato.git package/DIY/luci-theme-opentomato

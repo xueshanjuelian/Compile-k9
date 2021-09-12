@@ -22,6 +22,7 @@ git clone https://github.com/monokoo/luci-app-arpbind.git package/DIY/luci-app-a
 git clone https://github.com/awesome-openwrt/app-autoreboot.git package/DIY/luci-app-autoreboot  #计划重启
 git clone https://github.com/awesome-openwrt/app-ramfree.git package/DIY/luci-app-ramfree   #内存释放
 svn co https://github.com/zxlhhyccc/bf-package/trunk/lean/luci-app-accesscontrol package/DIY/luci-app-accesscontrol   #上网时间控制
+svn co https://github.com/zxlhhyccc/bf-package/trunk/lienol/luci-app-timecontrol package/DIY/luci-app-timecontrol
 svn co https://github.com/gw826943555/openwrt-vlmcsd/trunk/luci-app-vlmcsd package/DIY/luci-app-vlmcsd   #KSM服务app
 svn co https://github.com/gw826943555/openwrt-vlmcsd/trunk/vlmcsd package/DIY/vlmcsd   #KSM服务
 svn co https://github.com/gw826943555/openwrt-vsftpd/trunk/vsftpd package/DIY/vsftpd   #vsftpd共享

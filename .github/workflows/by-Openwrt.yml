@@ -42,17 +42,6 @@ jobs:
           cd openwrt
           ./scripts/feeds update -a
           ./scripts/feeds install -a
-          svn co https://github.com/zxlhhyccc/bf-package/trunk/lean/luci-app-vsftpd package/false/luci-app-vsftpd
-          svn co https://github.com/zxlhhyccc/bf-package/trunk/lean/vsftpd-alt package/false/vsftpd-alt
-          svn co https://github.com/zxlhhyccc/bf-package/trunk/lean/luci-app-vlmcsd package/false/luci-app-vlmcsd
-          svn co https://github.com/zxlhhyccc/bf-package/trunk/lean/vlmcsd package/false/vlmcsd
-          svn co https://github.com/zxlhhyccc/bf-package/trunk/lean/luci-app-ramfree package/false/luci-app-ramfree
-          svn co https://github.com/zxlhhyccc/bf-package/trunk/lean/luci-app-autoreboot package/false/luci-app-autoreboot
-          svn co https://github.com/zxlhhyccc/bf-package/trunk/lean/luci-app-arpbind package/false/luci-app-arpbind
-          svn co https://github.com/zxlhhyccc/bf-package/trunk/lean/luci-app-accesscontrol package/false/luci-app-accesscontrol
-          svn co https://github.com/zxlhhyccc/bf-package/trunk/lienol/luci-theme-argon-dark-mod package/false/luci-theme-argon-dark-mod
-          svn co https://github.com/zxlhhyccc/bf-package/trunk/ctcgfw/luci-theme-opentomato package/false/luci-theme-opentomato
-          svn co https://github.com/zxlhhyccc/bf-package/trunk/ctcgfw/luci-theme-opentomcat package/false/luci-theme-opentomcat
           
       - name: SSH连接至Actions云服务器
         uses: P3TERX/ssh2actions@v1.0.0

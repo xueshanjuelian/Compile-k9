@@ -47,7 +47,7 @@ jobs:
         run: |
           [ -e files ] && mv files openwrt/files
           [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-          cat configs/DIY.config >> openwrt/.config  
+          cat configs/C7.config >> openwrt/.config  
           
       - name: SSH连接至Actions云服务器
         uses: P3TERX/ssh2actions@v1.0.0

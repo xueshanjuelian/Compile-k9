@@ -19,7 +19,7 @@ on:
         required: true
         default: 'true'
         
-	env:
+env:
   REPO_URL: https://git.openwrt.org/openwrt/openwrt.git
   REPO_BRANCH: openwrt-19.07
   FEEDS_CONF: feeds.conf.default

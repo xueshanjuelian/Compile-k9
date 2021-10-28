@@ -44,8 +44,7 @@ jobs:
       - name: 加载自定义 .config 和 DIY_P2_SH
         run: |
          [ -e files ] && mv files openwrt/files
-         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-         cat configs/C7.config >> openwrt/.config
+         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/configs/C7.config
           
       - name: SSH连接至Actions云服务器
         uses: P3TERX/ssh2actions@v1.0.0

@@ -18,6 +18,7 @@ sed -i 's/disabled=1/disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac802
 #sed -i 's/ssid=OpenWrt/ssid=lantian/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # 自定义app
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-theme-opentomato package/diy
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-vsftpd package/false/luci-app-vsftpd
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/vsftpd-alt package/false/vsftpd-alt
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-vlmcsd package/false/luci-app-vlmcsd

@@ -19,28 +19,15 @@ on:
         required: true
         default: 'true'
         
-env:
-  REPO_URL: https://git.openwrt.org/openwrt/openwrt.git
-  REPO_BRANCH: openwrt-21.02
-  FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: .config
-  DIY_P1_SH: diy-part1.sh
-  DIY_P2_SH: diy-part2.sh
-  UPLOAD_BIN_DIR: false
-  UPLOAD_FIRMWARE: true
-  UPLOAD_COWTRANSFER: false
-  UPLOAD_WETRANSFER: false
-  UPLOAD_RELEASE: false
-  TZ: Asia/Shanghai
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
       - name: 检查。。。系统运行环境
         uses: actions/checkout@v2
 
-      - name: 正在载入Ubuntu-latest。。。。。
+      - name: 正在载入Ubuntu-20.04。。。。。
         run: |
           sudo apt update
           sudo apt install build-essential ccache ecj fastjar file g++ gawk gettext git java-propose-classpath \
@@ -54,6 +41,7 @@ jobs:
           ./scripts/feeds update -a
           ./scripts/feeds install -a
           sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
+          git clone https://github.com/sirpdboy/sirpdboy-package.git package/diy
           
       - name: SSH连接至Actions云服务器
         uses: P3TERX/ssh2actions@v1.0.0

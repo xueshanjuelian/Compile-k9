@@ -14,6 +14,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
+sed -i '$a src/gz openwrt_kiddin9 https://dl.openwrt.ai/latest/packages/aarch64_cortex-a53/kiddin9.git' feeds.conf.default
 #sed -i '$a src-git feeds https://github.com/baiyunxue/lede-feeds.git' feeds.conf.default
 #sed -i '$a src-git immortalwrt https://github.com/immortalwrt/luci.git;master' feeds.conf.default
 #sed -i '$a src-git kenzok8 https://github.com/kenzok8/small-package.git;19.07' feeds.conf.default

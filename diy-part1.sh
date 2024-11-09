@@ -14,11 +14,13 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
+ sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
+#sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages.git' feeds.conf.default
+
 #sed -i '$a src-git feeds https://github.com/baiyunxue/lede-feeds.git' feeds.conf.default
 #sed -i '$a src-git immortalwrt https://github.com/immortalwrt/luci.git;master' feeds.conf.default
 #sed -i '$a src-git kenzok8 https://github.com/kenzok8/small-package.git;19.07' feeds.conf.default
 #sed -i '$a src-git zerotier https://github.com/mwarning/zerotier-openwrt.git' feeds.conf.default
-sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages.git' feeds.conf.default
 #echo 'src-git packages https://github.com/kiddin9/packages.git;openwrt-19.07
 #echo 'src-git luci https://github.com/kiddin9/luci.git;openwrt-19.07
 #echo 'src-git src-git kiddin9 https://github.com/kiddin9/openwrt-packages.git

@@ -13,7 +13,9 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 # Modify WiFi ON
+sed -i 's/disabled=1/disabled=0/g' openwrt/package/kernel/mac80211/files/lib/wifi/mac80211.sh
 #sed -i 's/disabled=1/disabled=0/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+
 # Modify default SSID
 #sed -i 's/ssid=OpenWrt/ssid=lantian/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
@@ -41,3 +43,6 @@
 #自定义软件包
 #git clone -b 19.07 https://github.com/kenzok8/openwrt-packages package/kenzok8
 #git clone https://github.com/sirpdboy/sirpdboy-package.git package/sirpdboy
+
+#删除冲突的软件包
+rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}

@@ -45,4 +45,4 @@ sed -i 's/disabled=1/disabled=0/g' openwrt/package/kernel/mac80211/files/lib/wif
 #git clone https://github.com/sirpdboy/sirpdboy-package.git package/sirpdboy
 
 #删除冲突的软件包
-rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
+#rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}

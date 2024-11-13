@@ -5,7 +5,7 @@
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
 #
-# https://github.com/baiyunxue/Compile-Lede-Openwrt
+# https://github.com/baiyunxue/Compile-Openwrt
 # File name: diy-part1.sh
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #==============================================================
@@ -14,8 +14,8 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
- sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
-#sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages.git' feeds.conf.default
+#sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
+sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages.git' feeds.conf.default
 
 #sed -i '$a src-git feeds https://github.com/baiyunxue/lede-feeds.git' feeds.conf.default
 #sed -i '$a src-git immortalwrt https://github.com/immortalwrt/luci.git;master' feeds.conf.default

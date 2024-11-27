@@ -95,8 +95,8 @@ jobs:
     - name: Install feeds ==> 【安装feeds】
       run: cd openwrt && ./scripts/feeds install -a
    
-    - name: 删除冲突软件包
-      run: cd openwrt && rm -rf package/luci/applications
+    - name: 自定义包
+      run: cd openwrt && git clone https://github.com/linkease/istore package/istore
       
     - name: Load custom configuration ==> 【加载自定义 .config 和 DIY_P2_SH】
       run: |

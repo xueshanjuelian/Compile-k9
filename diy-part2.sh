@@ -46,7 +46,7 @@
 
 #删除冲突的软件包
 #rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
-#rm -rf package/luci/{applications}
+#rm -rf package/luci/applications
 #修改插件名称
 #sed -i 's/"Partition Expansion"/"一键分区扩容"/g' `egrep "Partition Expansion" -rl ./`
 #sed -i 's/"Advanced plus"/"进阶参数设置"/g' `egrep "Advanced plus" -rl ./`

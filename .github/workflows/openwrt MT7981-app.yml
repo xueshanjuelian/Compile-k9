@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #=========================================================
 
-name: P大 MT7981-app
+name: openwrt MT7981-app
 
 on:
   repository_dispatch:
@@ -22,18 +22,18 @@ on:
  
 
 env:
-  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x
-  REPO_BRANCH: openwrt-21.02
+  REPO_URL: https://github.com/istoreos/istoreos
+  REPO_BRANCH: openwrt-23.05
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   TZ: Asia/Shanghai
-  DEVICE: rax3000m
+  DEVICE: MT7981 全系列集成ipk
   UPLOAD_OUTPUT: true
 
 jobs:
-   _rax3000m:
+   _openwrt:
     runs-on: ubuntu-20.04
     permissions:
       contents: write

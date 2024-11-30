@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #=========================================================
 
-name: openwrt MT7981-app
+name: istoreos MT7981-app
 
 on:
   repository_dispatch:
@@ -23,7 +23,7 @@ on:
 
 env:
   REPO_URL: https://github.com/istoreos/istoreos
-  REPO_BRANCH: istoreos-22.03
+  REPO_BRANCH: istoreos-23.05
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh

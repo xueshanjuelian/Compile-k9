@@ -29,7 +29,7 @@ env:
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   TZ: Asia/Shanghai
-  DEVICE: 237集成常用ipk
+  DEVICE: RAX3000M集成常用ipk
   UPLOAD_OUTPUT: true
 
 jobs:

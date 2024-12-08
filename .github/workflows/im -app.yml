@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #=========================================================
 
-name: imm-app
+name: immorlawrt-app
 
 on:
   repository_dispatch:

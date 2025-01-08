@@ -22,7 +22,7 @@ on:
  
 
 env:
-  REPO_URL: https://github.com/baiyunxue/istoreos
+  REPO_URL: https://github.com/istoreos/istoreos
   REPO_BRANCH: istoreos-23.05
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config

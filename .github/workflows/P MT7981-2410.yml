@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #=========================================================
 
-name: P MT7981-app
+name: P MT7981-2410
 
 on:
   repository_dispatch:
@@ -29,7 +29,7 @@ env:
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   TZ: Asia/Shanghai
-  DEVICE: MT7981-23.05全系列集成Docker和常用软件包（适合emmc）
+  DEVICE: MT7981-2410系列集成Docker和常用软件包（适合emmc）
   UPLOAD_OUTPUT: true
 
 jobs:

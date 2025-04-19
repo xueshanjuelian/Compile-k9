@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #=========================================================
 
-name: x-wrt MT7981-app
+name: x-wrt MT7981
 
 on:
   repository_dispatch:
@@ -29,7 +29,7 @@ env:
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   TZ: Asia/Shanghai
-  DEVICE: MT7981全系列集成ipk
+  DEVICE: XR30-EMMC
   UPLOAD_OUTPUT: true
 
 jobs:

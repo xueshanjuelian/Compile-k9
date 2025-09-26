@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #=========================================================
 
-name: H-MT7981-puls
+name: P-MT7981-puls
 
 on:
   repository_dispatch:

@@ -22,14 +22,14 @@ on:
  
 
 env:
-  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x-6.6
-  REPO_BRANCH: openwrt-24.10-6.6
+  REPO_URL: https://github.com/xueshanjuelian/immortalwrt
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   TZ: Asia/Shanghai
-  DEVICE: MT7981全系列-集成Docker和常用基础包（适合emmc及硬改256闪存）
+  DEVICE: MT7621集成Docker和常用基础包（适合emmc及硬改256闪存）
   UPLOAD_OUTPUT: true
 
 jobs:

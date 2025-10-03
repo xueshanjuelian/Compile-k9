@@ -22,7 +22,7 @@ on:
  
 
 env:
-  REPO_URL: https://github.com/xueshanjuelian/immortalwrt
+  REPO_URL: https://github.com/xueshanjuelian/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config

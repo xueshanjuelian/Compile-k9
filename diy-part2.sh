@@ -37,11 +37,11 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-accessco
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-zerotier package/DIY/luci-app-zerotier
 
 # 自定义theme主题
-git clone https://github.com/Leo-Jo-My/luci-theme-opentomato.git package/DIY/luci-theme-opentomato
-git clone https://github.com/Leo-Jo-My/luci-theme-argon-dark-mod.git package/DIY/luci-theme-argon-dark-mod
+#git clone https://github.com/Leo-Jo-My/luci-theme-opentomato.git package/DIY/luci-theme-opentomato
+#git clone https://github.com/Leo-Jo-My/luci-theme-argon-dark-mod.git package/DIY/luci-theme-argon-dark-mod
 
 #自定义软件包
-git clone -b 24.10 https://github.com/kenzok8/openwrt-packages package/kenzok8
+#git clone -b 24.10 https://github.com/kenzok8/openwrt-packages package/kenzok8
 #git clone https://github.com/sirpdboy/sirpdboy-package.git package/sirpdboy
 
 #删除冲突的软件包

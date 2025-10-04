@@ -41,7 +41,7 @@ git clone https://github.com/Leo-Jo-My/luci-theme-opentomato.git package/DIY/luc
 git clone https://github.com/Leo-Jo-My/luci-theme-argon-dark-mod.git package/DIY/luci-theme-argon-dark-mod
 
 #自定义软件包
-#git clone -b 19.07 https://github.com/kenzok8/openwrt-packages package/kenzok8
+git clone -b 24.10 https://github.com/kenzok8/openwrt-packages package/kenzok8
 #git clone https://github.com/sirpdboy/sirpdboy-package.git package/sirpdboy
 
 #删除冲突的软件包

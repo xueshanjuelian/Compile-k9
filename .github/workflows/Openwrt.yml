@@ -21,6 +21,7 @@ on:
 
 env:
   REPO_URL: https://github.com/xueshanjuelian/openwrtyuan
+  REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
@@ -33,11 +34,12 @@ env:
   TZ: Asia/Shanghai
 
 jobs:
-  build:
-    runs-on: ubuntu-20.04
+   _openwrt:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
 
-    steps:
-    
+    steps:    
     - name: 检查。。。。。。初始环境
       uses: actions/checkout@main
 

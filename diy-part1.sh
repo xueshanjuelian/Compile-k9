@@ -14,12 +14,21 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-# sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
+sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 
-echo "src-git kiddin9 https://github.com/kiddin9/kwrt-packages" >> ./feeds.conf.default
-echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
-echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >> feeds.conf.default
+# 以下是immortalwrt使用
+echo "src-git kiddin9 https://github.com/kiddin9/kwrt-packages.git" >> ./feeds.conf.default
+echo "src-git packages https://github.com/immortalwrt/packages.git" >> ./feeds.conf.default
+echo "src-git luci https://github.com/immortalwrt/luci.git" >> ./feeds.conf.default
+echo "src-git routing https://github.com/openwrt/routing.git" >> ./feeds.conf.default
+echo "src-git telephony https://github.com/openwrt/telephony.git" >> ./feeds.conf.default
+echo "src-git video https://github.com/openwrt/video.git" >> ./feeds.conf.default
 echo "src-git usbmodem https://github.com/Azq2/openwrt-usbmodem" >> ./feeds.conf.default
+
+# 以下是LEDE
+#echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
+#echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >> feeds.conf.default
+#echo "src-git usbmodem https://github.com/Azq2/openwrt-usbmodem" >> ./feeds.conf.default
 
 #sed -i '$a src-git immortalwrt https://github.com/immortalwrt/luci.git;master' feeds.conf.default
 #sed -i '$a src-git kenzok8 https://github.com/kenzok8/small-package.git;19.07' feeds.conf.default

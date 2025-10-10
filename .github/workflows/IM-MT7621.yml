@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #=========================================================
 
-name: im-MT7981
+name: IM-MT7981
 
 on:
   repository_dispatch:
@@ -29,7 +29,7 @@ env:
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   TZ: Asia/Shanghai
-  DEVICE: zte_e8820s
+  DEVICE: gehua_ghl-r-001
   UPLOAD_OUTPUT: true
 
 jobs:

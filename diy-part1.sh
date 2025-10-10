@@ -24,6 +24,7 @@ echo "src-git routing https://github.com/openwrt/routing.git" >> ./feeds.conf.de
 echo "src-git telephony https://github.com/openwrt/telephony.git" >> ./feeds.conf.default
 echo "src-git video https://github.com/openwrt/video.git" >> ./feeds.conf.default
 echo "src-git usbmodem https://github.com/Azq2/openwrt-usbmodem" >> ./feeds.conf.default
+echo "src-git helloworld https://github.com/fw876/helloworld.git" >> ./feeds.conf.default
 
 # 以下是LEDE
 #echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default

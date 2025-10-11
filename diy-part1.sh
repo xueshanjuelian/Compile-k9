@@ -18,8 +18,8 @@ sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.con
 
 # 以下是immortalwrt使用
 echo "src-git kiddin9 https://github.com/kiddin9/kwrt-packages.git" >> ./feeds.conf.default
-echo "src-git packages https://github.com/immortalwrt/packages.git" >> ./feeds.conf.default
-echo "src-git luci https://github.com/immortalwrt/luci.git" >> ./feeds.conf.default
+#echo "src-git packages https://github.com/immortalwrt/packages.git" >> ./feeds.conf.default
+#echo "src-git luci https://github.com/immortalwrt/luci.git" >> ./feeds.conf.default
 #echo "src-git routing https://github.com/openwrt/routing.git" >> ./feeds.conf.default
 #echo "src-git telephony https://github.com/openwrt/telephony.git" >> ./feeds.conf.default
 #echo "src-git video https://github.com/openwrt/video.git" >> ./feeds.conf.default

@@ -14,7 +14,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
+#sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 
 # 以下是immortalwrt使用
 echo "src-git kiddin9 https://github.com/kiddin9/kwrt-packages.git" >> ./feeds.conf.default
@@ -24,7 +24,7 @@ echo "src-git kiddin9 https://github.com/kiddin9/kwrt-packages.git" >> ./feeds.c
 #echo "src-git telephony https://github.com/openwrt/telephony.git" >> ./feeds.conf.default
 #echo "src-git video https://github.com/openwrt/video.git" >> ./feeds.conf.default
 #echo "src-git usbmodem https://github.com/Azq2/openwrt-usbmodem" >> ./feeds.conf.default
-echo "src-git helloworld https://github.com/fw876/helloworld.git" >> ./feeds.conf.default
+#echo "src-git helloworld https://github.com/fw876/helloworld.git" >> ./feeds.conf.default
 
 # 以下是LEDE
 #echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default

@@ -83,6 +83,7 @@ jobs:
         ln -sf /mnt/workdir/openwrt $GITHUB_WORKSPACE/openwrt
  
     - name: genggai neihe banben ==> 【更改内核为5.10.221】
+      run: |
         cd openwrt
         git checkout f3d6035d7819271439d3751148c4f58a0b48d023
 

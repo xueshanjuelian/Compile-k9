@@ -81,6 +81,8 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /mnt/workdir/openwrt $GITHUB_WORKSPACE/openwrt
+ 
+    - name: genggai neihe banben ==> 【更改内核为5.10.221】
         cd openwrt
         git checkout f3d6035d7819271439d3751148c4f58a0b48d023
 
@@ -101,7 +103,7 @@ jobs:
       run: |
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-        cat configs/lede-MT7981.config >> openwrt/.config
+        cat configs/MT7621.config >> openwrt/.config
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH

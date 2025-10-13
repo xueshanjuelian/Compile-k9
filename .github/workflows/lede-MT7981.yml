@@ -88,7 +88,6 @@ jobs:
         git checkout f3d6035d7819271439d3751148c4f58a0b48d023
         rm -rf feeds/packages/lang/golang
         git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
-        sed -i 's/ +libopenssl-legacy//g' feeds/small/shadowsocksr-libev/Makefile
 
     - name: Load custom feeds ==> 【加载自定义 DIY_P1_SH 到 feeds.conf.default】
       run: |

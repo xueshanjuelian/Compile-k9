@@ -8,16 +8,19 @@
 # Description: Build OpenWrt using GitHub Actions
 #=========================================================
 
-name: lede-mt7981
+name: 6.6DINGSHI
 
 on:
+  on:
+  schedule:
+    - cron: 30 09 * * 1
   repository_dispatch:
   workflow_dispatch:
     inputs:
       ssh:
         description: 'SSH connection to Actions'
-        required: true
-        default: 'true'
+        required: false
+        default: 'false'
 
  
 

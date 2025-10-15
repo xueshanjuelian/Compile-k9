@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #=========================================================
 
-name: lede-MT7981
+name: lede-genggaiNEIHE
 
 on:
   repository_dispatch:
@@ -88,6 +88,11 @@ jobs:
         git checkout f3d6035d7819271439d3751148c4f58a0b48d023
         rm -rf feeds/packages/lang/golang
         git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
+# vi target/linux/ramips/Makefile   在后面SSH拉取上面的版本代码后，改大版本号
+# vi target/linux/ramips/image/mt7621.mk  改相关路由闪存大小128M是130752K
+# vi target/linux/ramips/dts/mt7621_gehua_ghl-r-001.dts  改上面mk相关的存储大小128M是reg = <0x50000 0x7fb0000
+# vi target/linux/ramips/dts/mt7621_zte_e8820s.dts 同上
+# vi target/linux/ramips/base-files/etc/board.d/02_network 改网口顺序，网口数量
 
     - name: Load custom feeds ==> 【加载自定义 DIY_P1_SH 到 feeds.conf.default】
       run: |

@@ -23,7 +23,7 @@ on:
 
 env:
   REPO_URL: https://github.com/xueshanjuelian/immortalwrt
-  REPO_BRANCH: openwrt-23.05
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
@@ -100,7 +100,7 @@ jobs:
       run: |
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-        cat configs/K2PGHLduo.config >> openwrt/.config
+        cat configs/lede-mt7981.config >> openwrt/.config
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH

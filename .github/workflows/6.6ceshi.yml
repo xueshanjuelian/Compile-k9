@@ -10,9 +10,9 @@
 
 name: 6.6DINGSHI
 
-on:
-  schedule:
-    - cron: 20 11 * * 1
+#on:
+#  schedule:
+#    - cron: 20 11 * * 1
   repository_dispatch:
   workflow_dispatch:
     inputs:

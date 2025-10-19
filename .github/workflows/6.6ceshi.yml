@@ -10,7 +10,7 @@
 
 name: 6.6DINGSHI
 
-#on:
+on:
 #  schedule:
 #    - cron: 20 11 * * 1
   repository_dispatch:

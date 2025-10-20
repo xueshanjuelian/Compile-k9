@@ -22,7 +22,7 @@ on:
  
 
 env:
-  REPO_URL: https://github.com/xueshanjuelian/immortalwrt
+  REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
@@ -96,14 +96,14 @@ jobs:
     - name: Install feeds ==> 【安装feeds】
       run: cd openwrt && ./scripts/feeds install -a
       
-    - name: Load custom configuration ==> 【加载自定义 .config 和 DIY_P2_SH】
-      run: |
-        [ -e files ] && mv files openwrt/files
-        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-        cat configs/im-MT7981.config >> openwrt/.config
-        chmod +x $DIY_P2_SH
-        cd openwrt
-        $GITHUB_WORKSPACE/$DIY_P2_SH
+    #- name: Load custom configuration ==> 【加载自定义 .config 和 DIY_P2_SH】
+    #  run: |
+    #    [ -e files ] && mv files openwrt/files
+    #    [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
+    #    cat configs/im-MT7981.config >> openwrt/.config
+    #    chmod +x $DIY_P2_SH
+    #    cd openwrt
+    #    $GITHUB_WORKSPACE/$DIY_P2_SH
       
     - name: SSH connection to Actions ==> 【SSH连接至Actions云服务器】
       uses: P3TERX/ssh2actions@v1.0.0

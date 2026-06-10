@@ -14,11 +14,11 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-＃sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
+#sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 
-echo "src-git kiddin9 https://github.com/kiddin9/kwrt-packages" >> ./feeds.conf.default
-echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
-echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >> feeds.conf.default
+#echo "src-git kiddin9 https://github.com/kiddin9/op-packages.git;main" >> ./feeds.conf.default
+#echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
+#echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >> feeds.conf.default
 #echo "src-git usbmodem https://github.com/Azq2/openwrt-usbmodem" >> ./feeds.conf.default
 
 #sed -i '$a src-git immortalwrt https://github.com/immortalwrt/luci.git;master' feeds.conf.default
@@ -26,7 +26,7 @@ echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >
 #sed -i '$a src-git zerotier https://github.com/mwarning/zerotier-openwrt.git' feeds.conf.default
 #echo 'src-git packages https://github.com/kiddin9/packages.git;openwrt-19.07
 #echo 'src-git luci https://github.com/kiddin9/luci.git;openwrt-19.07
-#echo 'src-git src-git kiddin9 https://github.com/kiddin9/openwrt-packages.git
+#echo 'src-git kiddin9 https://github.com/kiddin9/op-packages.git;main
 #echo 'src-git hackpackage https://github.com/openwrt/packages.git;openwrt-19.07' >>feeds.conf.default
 #sed -i '$a src-git immortalwrt https://github.com/immortalwrt/luci.git;openwrt-18.06' feeds.conf.default
 #echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
